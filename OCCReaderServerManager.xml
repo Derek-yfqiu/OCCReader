@@ -1,0 +1,55 @@
+<ServerManagerConfiguration>
+
+  <ProxyGroup name="sources">
+
+    <SourceProxy name="OCCReader"
+                 class="vtkOCCReader"
+                 label="OCC Reader">
+      <Documentation
+        short_help="Fetch CAD data from BREP, IGES, and STEP files"
+        long_help="Fetch CAD data from BREP, IGES, and STEP files">
+        Reading CAD data from BREP, IGES, and STEP files.
+      </Documentation>
+      <StringVectorProperty
+         name="FileName"
+         command="SetFileName"
+         number_of_elements="1"
+         animateable="0">
+         <FileListDomain name="files" />
+         <Documentation>
+            This property specifies the file name for the table reader.
+        </Documentation>
+      </StringVectorProperty>
+     <IntVectorProperty
+        name="DispalyMode"
+        command="SetMode"
+        number_of_elements="1"
+        default_values="2">
+       <IntRangeDomain name="range" min="1" max="3"/>
+       <Documentation>
+         This property specifies the dispaly mode, 1 is wireframe ,
+         2 is shading, and 3 is wireframe + shading.
+       </Documentation>
+     </IntVectorProperty>
+
+     <DoubleVectorProperty
+        name="Deflection"
+        command="SetDeflection"
+        number_of_elements="1"
+        default_values="0.001">
+       <DoubleRangeDomain name="range" min="0.00001" max="0.001"/>
+       <Documentation>
+         This property specifies smoothing of the shading.
+       </Documentation>
+     </DoubleVectorProperty>
+     <Hints>
+        <ReaderFactory extensions="step stp iges igs brep"
+                       file_description="OpenCASCADE CAD Files" />
+     </Hints>
+      <!-- End OCC2VTKCorbaSource -->
+    </SourceProxy>
+
+  </ProxyGroup>
+
+</ServerManagerConfiguration>
+

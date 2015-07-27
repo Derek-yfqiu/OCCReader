@@ -1,0 +1,6 @@
+<ParaViewReaders>
+  <Reader name="OCCReader"
+     extensions="brep iges igs step stp"
+     file_description="OpenCASCADE CAD Files">
+  </Reader>
+</ParaViewReaders>
