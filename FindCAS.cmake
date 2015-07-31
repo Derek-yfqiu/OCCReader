@@ -1,4 +1,4 @@
-# Copyright (C) 2007-2013  CEA/DEN, EDF R&D, OPEN CASCADE
+# Copyright (C) 2014-2015  KIT-INR/NK 
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -14,11 +14,9 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #
-# See http://www.salome-platform.org/ or email : webmaster.salome@opencascade.com
-#
 
-SET(CASROOT $ENV{CAS_ROOT_DIR})
-#SET(CASROOT $ENV{CASROOT})
+#SET(CASROOT $ENV{CAS_ROOT_DIR})
+SET(CASROOT $ENV{CASROOT})
 MESSAGE( ${CASROOT} )
 # SET(OCC_VERSION_MAJOR 6)
 # SET(OCC_VERSION_MINOR 7)
@@ -62,9 +60,9 @@ IF(WINDOWS)
 #  IF(PARAVIEW_BUILD_ARCHITECTURE STREQUAL 32)
 #    SET(CASROOT_LIBDIR ${CASROOT}/win32/vc10/lib)
 #  ELSE(PARAVIEW_BUILD_ARCHITECTURE STREQUAL 64)
-#    SET(CASROOT_LIBDIR ${CASROOT}/win64/vc10/lib)
+    SET(CASROOT_LIBDIR ${CASROOT}/win64/vc10/lib)
 #  ENDIF(CMAKE_BUILD_TYPE STREQUAL Debug)
-SET(CASROOT_LIBDIR ${CASROOT}/win32/lib)
+# SET(CASROOT_LIBDIR ${CASROOT}/win32/lib)
 ELSE(WINDOWS)
   SET(CASROOT_LIBDIR ${CASROOT}/lib)
 ENDIF(WINDOWS)

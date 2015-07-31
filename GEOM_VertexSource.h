@@ -1,4 +1,4 @@
-// Copyright (C) 2007-2013  CEA/DEN, EDF R&D, OPEN CASCADE
+// Copyright (C) 2014-2015  KIT-INR/NK 
 //
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
@@ -14,7 +14,6 @@
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 //
-// See http://www.salome-platform.org/ or email : webmaster.salome@opencascade.com
 //
 
 #ifndef GEOM_VERTEXSOURCE_H 
