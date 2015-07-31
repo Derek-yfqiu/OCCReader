@@ -45,3 +45,4 @@ CMakeLists.txt~
 FindCAS.cmake.bak
 *.user
 CMakeLists.txt.bak
+*.bak
