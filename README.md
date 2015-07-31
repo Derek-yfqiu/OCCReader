@@ -26,4 +26,6 @@ A  plugin for visualizing CAD file in STEP,IGES and BREP format in  ParaView.
    Ulrich Fischer(ulrich.fischer@kit.edu) or, for technical assistance, contact
    Yuefeng Qiu (Yuefeng.qiu@kit.edu).
    
+   Have fun playing with it!   :)
+   
    
