@@ -1,12 +1,11 @@
 ********************************************************************************
-OCCReader 
+OCCReader ---
 A plugin for visualizing CAD file in STEP,IGES and BREP format in  ParaView. 
 ********************************************************************************
 
 
-   
-********************  Compile in Linux system **********************************
 ********************************************************************************
+********************  Compile in Linux system **********************************
 
 This compilation process was tested in Ubutun 14.04 system. Remember to change
 all the abbreviation (for example $PVBUILD)to the actual folder name.
@@ -37,7 +36,9 @@ which includes all these libraries and toolkits in a whole package.
     modules because we don't need them. Then click the "Prerequistes", and
     select "Qt" and "OpenCascade", which are dependencies we needed. Keep
     clicking "NEXT" and finished the installation.
-    
+
+
+
 ****Step 2. Compile ParaView with the plugin
 -> Copy the OCCReader folder to $PVSRC/Plugins, so that we have all the files in 
 	$PVSRC/Plugins/OCCReader folder
@@ -65,6 +66,8 @@ which includes all these libraries and toolkits in a whole package.
 
 You can find a file named "libOCCReader.so" under the $PVINSTALL/lib/paraview-*.* . 
 
+
+
 ****Step 3. Run ParaView with this plugin
 
 To run ParaView with this plugin, you need to run it under proper environment.
@@ -75,9 +78,9 @@ To run ParaView with this plugin, you need to run it under proper environment.
 
 You can write a bash script to make it easier. for example: 
 
-#!/bin/bash
-source $SALOME/env_products.sh
-$PVINSTALL/bin/paraview
+	#!/bin/bash
+	source $SALOME/env_products.sh
+	$PVINSTALL/bin/paraview
 
 Copy the plugin library "libOCCReader.so" to the $PVINSTALL/lib. You need to load
 this library manually for the first time. In ParaView menu Tools->Manage
@@ -85,8 +88,11 @@ Plugins, click "Load New" to load the "libOCCReader.so" in the $PVINSTALL/lib, a
 select "Auto Load" to load it automatically.
 
 
-********************  Compile in Windows system ********************************
+
 ********************************************************************************
+********************  Compile in Windows system ********************************
+
+
 The tested system is Windows7. You need cmake for generating the project, and
 Visual Studio for compilation. The current tested version is Visual studio 2010.
 Download cmake from http://www.cmake.org/download and choose Win32 installer,
@@ -196,10 +202,10 @@ ParaView executable.
     irml.dll msvcp100.dll(optional) msvcr100.dll(Optional) tbb.dll
     tbbmalloc.dll 
     
--> After the above step, open paraview.exe, You need to load
-    this library manually for the first time. In ParaView menu Tools->Manage
-    Plugins, click "Load New" to load the "libOCCReader.so" in the
-    $PVINSTALL/lib, and select "Auto Load" to load it automatically.
+-> After the above step, open paraview.exe, You need to load this library
+manually for the first time. In ParaView menu Tools->Manage Plugins, click "Load
+New" to load the "OCCReader.dll" in the some folder as paraview.exe , and select
+"Auto Load" to load it automatically.
 
 	
 ********************  How to use this plugin ***********************************

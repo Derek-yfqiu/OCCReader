@@ -1,5 +1,5 @@
 ********************************************************************************
-OCCReader 
+OCCReader ---
 A  plugin for visualizing CAD file in STEP,IGES and BREP format in  ParaView.
 ********************************************************************************
 
