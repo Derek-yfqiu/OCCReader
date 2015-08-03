@@ -84,7 +84,7 @@ You can write a bash script to make it easier. for example:
 
 Copy the plugin library "libOCCReader.so" to the $PVINSTALL/lib. You need to load
 this library manually for the first time. In ParaView menu Tools->Manage
-Plugins, click "Load New" to load the "libOCCReader.so" in the $PVINSTALL/lib, and
+Plugins, click "Load New" to load the "libOCCReader.so" in the $PVINSTALL/lib/paraview-*.*/, and
 select "Auto Load" to load it automatically.
 
 
